@@ -5,7 +5,9 @@
     <meta name="theme-color" content="#080b16"><title>HyperVision Notes AI</title>
 
 <link rel="stylesheet" href="style.css">
-
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+    
 </head><body><div class="app">
 
     <header class="header">
@@ -106,6 +108,12 @@
 </div>
 
 <script src="script.js"></script>
-
+<script>
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+        navigator.serviceWorker.register("./service-worker.js");
+    });
+}
+</script>
 </body>
 </html>
