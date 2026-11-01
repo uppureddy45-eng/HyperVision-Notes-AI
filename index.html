@@ -1,0 +1,111 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080b16"><title>HyperVision Notes AI</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head><body><div class="app">
+
+    <header class="header">
+        <div class="logo">
+            <div class="logo-icon">H</div>
+            <div>
+                <h2>HyperVision</h2>
+                <p>NOTES AI</p>
+            </div>
+        </div>
+
+        <button class="profile">HV</button>
+    </header>
+
+    <main>
+
+        <section class="welcome">
+            <p class="subtitle">YOUR PERSONAL WORKSPACE</p>
+            <h1>Think. Create.<br><span>Remember.</span></h1>
+            <p class="description">
+                Your thoughts, organized intelligently.
+            </p>
+        </section>
+
+        <section class="search-box">
+            <span>⌕</span>
+            <input
+                type="search"
+                id="searchInput"
+                placeholder="Search your notes..."
+            >
+        </section>
+
+        <section class="quick-actions">
+
+            <button class="action-card" id="newNote">
+                <span>＋</span>
+                <h3>New Note</h3>
+                <p>Capture your thoughts</p>
+            </button>
+
+            <button class="action-card" id="aiButton">
+                <span>✧</span>
+                <h3>AI Assistant</h3>
+                <p>Organize your ideas</p>
+            </button>
+
+        </section>
+
+        <section class="notes-section">
+
+            <div class="section-heading">
+                <h2>Your Notes</h2>
+                <span id="noteCount">0 NOTES</span>
+            </div>
+
+            <div id="notesContainer" class="notes-container">
+                <div class="empty-state">
+                    <div>✧</div>
+                    <h3>Your space is empty</h3>
+                    <p>Create your first note to get started.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="editor" class="editor hidden">
+
+            <h2>Create Note</h2>
+
+            <input
+                type="text"
+                id="noteTitle"
+                placeholder="Note title..."
+            >
+
+            <textarea
+                id="noteContent"
+                placeholder="Write your thoughts here..."
+            ></textarea>
+
+            <div class="editor-buttons">
+                <button id="saveNote">Save Note</button>
+                <button id="cancelNote">Cancel</button>
+            </div>
+
+        </section>
+
+    </main>
+
+    <nav class="bottom-nav">
+        <button class="active">⌂<span>Home</span></button>
+        <button id="navNotes">▤<span>Notes</span></button>
+        <button id="navAI">✧<span>AI</span></button>
+        <button id="navSettings">⚙<span>Settings</span></button>
+    </nav>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
